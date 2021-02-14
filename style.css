@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding-top: 65px;
+}
+.top {
+    top: 0;
+    position: fixed;
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: white;
+    box-shadow: 0px 3px 4px rgba(0,0,0,0.3);
+}
+
+nav div {
+    display: flex;
+    align-items: center;
+    
+}
+nav button + button {
+    margin-left: 13px;
+
+}
+.contener1 {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(4 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas: "principal principal principal principal";
+    display: flex;
+}
+.art{
+    grid-area: principal;
+}
+main header {
+    display: flex;
+}
+.contener2 {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(3 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "A0 A1 A2 "
+                         "A0 A1 A2 "   
+                         "A0 A1 A2 ";
+ }    
+
+.art0{
+    grid-area: A0;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+   
+}
+.art1{
+    grid-area: A1;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+   
+}
+
+
+.art7{
+    grid-area: A2;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+  img h1 figure section div{
+    display: flex;
+   }
+.contener3{
+
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(2 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas: "area1 area2 ";
+
+}
+
+.links{
+    grid-area: area2;
+    
+
+}
+
+ }
+.final {
+
+    grid-area: area1;
+
+}
